@@ -17,5 +17,18 @@ export const productTypes = [
     description: "Lightweight wraparound sunglasses for cricket practice, fielding, cycling, and outdoor training.",
     image: "/images/sunglasses/sunglasses-collection.jpeg",
   },
+  {
+    id: "type-sports-tshirts",
+    name: "Sports T-shirts",
+    description: "Comfortable and stylish T-shirt made with soft, breathable fabric for everyday wear",
+  
+    image: "",
+  },
+  {
+    id: "type-sports-tracks",
+    name: "Sports Tracks",
+    description: "omfortable and flexible track pants designed for workouts, sports, and casual wear.",
+    image: "",
+  },
 ];
 
