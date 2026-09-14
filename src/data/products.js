@@ -23,7 +23,7 @@ export const products = [
     id: "sunglass-1",
     productTypeId: "type-sports-sunglasses",
     name: "Oakley Style Sports Sunglasses",
-    price: 1600,
+    price: 749,
     images: [
       "/images/sunglasses/white-sports-sunglasses.jpeg",
       "/images/sunglasses/red-sports-sunglasses.jpeg",
