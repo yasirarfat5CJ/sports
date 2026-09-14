@@ -33,7 +33,7 @@ export const products = [
     description:
       "Wraparound sports sunglasses with mirrored lenses and a secure fit for cricket fielding, running, and sunny outdoor practice.",
     specifications: [
-      { label: "MRP", value: "₹1,600" },
+      { label: "MRP", value: "₹749" },
       { label: "Lens", value: "Mirrored shield" },
       { label: "Frame", value: "Lightweight sports frame" },
     ],
