@@ -33,15 +33,14 @@ export const productTypes = [
     id: "type-sports-tshirts",
     name: "Sports T-shirts",
     description: "Comfortable and stylish T-shirt made with soft, breathable fabric for everyday wear",
-  
-    image: "",
+    image: "/images/tshirts/tshirtss.png",
   },
-  {
-    id: "type-sports-tracks",
-    name: "Sports Tracks",
-    description: "Comfortable and flexible track pants designed for workouts, sports, and casual wear.",
-    image: "",
-  },
+  // {
+  //   id: "type-sports-tracks",
+  //   name: "Sports Tracks",
+  //   description: "Comfortable and flexible track pants designed for workouts, sports, and casual wear.",
+  //   image: "/images/tshirts/tshirtss.png",
+  // },
   
 ];
 
