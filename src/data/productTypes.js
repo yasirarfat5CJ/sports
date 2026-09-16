@@ -18,6 +18,18 @@ export const productTypes = [
     image: "/images/sunglasses/sunglasses-collection.jpeg",
   },
   {
+    id: "type-cricket-pad",
+    name: "Cricket pad",
+    description: "Lightweight and durable cricket pads designed for comfortable movement and reliable protection during play",
+    image: "/images/pads/sg1.jpg",
+  },
+  {
+    id: "type-cricket-gloves",
+    name: "Cricket gloves",
+    description: "Comfortable and durable cricket gloves designed for a secure grip, flexibility, and reliable hand protection during play. ",
+    image: "/images/gloves/gnic1.jpg",
+  },
+  {
     id: "type-sports-tshirts",
     name: "Sports T-shirts",
     description: "Comfortable and stylish T-shirt made with soft, breathable fabric for everyday wear",
@@ -30,17 +42,6 @@ export const productTypes = [
     description: "Comfortable and flexible track pants designed for workouts, sports, and casual wear.",
     image: "",
   },
-  {
-    id: "type-cricket-pad",
-    name: "Cricket pad",
-    description: "Lightweight and durable cricket pads designed for comfortable movement and reliable protection during play",
-    image: "/images/pads/sg1.jpg",
-  },
-  {
-    id: "type-cricket-gloves",
-    name: "Cricket gloves",
-    description: "Comfortable and durable cricket gloves designed for a secure grip, flexibility, and reliable hand protection during play. ",
-    image: "/images/gloves/gnic1.jpg",
-  }
+  
 ];
 
