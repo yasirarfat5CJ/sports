@@ -3,7 +3,7 @@ export const productTypes = [
     id: "type-tennis-bats",
     name: "Tennis Bats",
     description: "Lightweight bats for tennis-ball cricket, fast pickup, and confident street-to-turf play.",
-    image: "/images/bats/tennis-bats.jpeg",
+    image: "/images/bats/bats.jpg",
   },
   {
     id: "type-cricket-shoes",
@@ -27,8 +27,20 @@ export const productTypes = [
   {
     id: "type-sports-tracks",
     name: "Sports Tracks",
-    description: "omfortable and flexible track pants designed for workouts, sports, and casual wear.",
+    description: "Comfortable and flexible track pants designed for workouts, sports, and casual wear.",
     image: "",
   },
+  {
+    id: "type-cricket-pad",
+    name: "Cricket pad",
+    description: "Lightweight and durable cricket pads designed for comfortable movement and reliable protection during play",
+    image: "/images/pads/sg1.jpg",
+  },
+  {
+    id: "type-cricket-gloves",
+    name: "Cricket gloves",
+    description: "Comfortable and durable cricket gloves designed for a secure grip, flexibility, and reliable hand protection during play. ",
+    image: "/images/gloves/gnic1.jpg",
+  }
 ];
 

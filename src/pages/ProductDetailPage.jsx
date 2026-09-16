@@ -10,7 +10,7 @@ export function ProductDetailPage({ product, type, onBack }) {
 
   if (!product) {
     return (
-      <section className="section page">
+      <section className="container-xl py-5 min-vh-100">
         <BackButton onClick={onBack}>Back</BackButton>
         <p>Product not found.</p>
       </section>
@@ -29,39 +29,45 @@ export function ProductDetailPage({ product, type, onBack }) {
   const whatsappUrl = `https://wa.me/${shop.whatsappNumber}?text=${encodeURIComponent(whatsappMessage)}`;
 
   return (
-    <section className="product-detail section page">
+    <section className="container-xl py-5 min-vh-100">
       <BackButton onClick={onBack}>Back to {type?.name || "collection"}</BackButton>
-      <div className="detail-media reveal">
-        <img src={images[activeImage]} alt={product.name} />
+      <div className="row g-4 g-lg-5 align-items-start">
+      <div className="col-lg-6">
+      <div className="card border-0 shadow-sm p-3 product-detail-card">
+        <div className="detail-media">
+        <img className="product-detail-img" src={images[activeImage]} alt={product.name} />
         {images.length > 1 && (
-          <div className="thumb-row">
+          <div className="d-flex gap-2 mt-3 overflow-auto">
             {images.map((image, index) => (
-              <button className={index === activeImage ? "active" : ""} key={image} onClick={() => setActiveImage(index)}>
+              <button className={`thumb-button ${index === activeImage ? "active" : ""}`} key={image} onClick={() => setActiveImage(index)}>
                 <img src={image} alt={`${product.name} view ${index + 1}`} />
               </button>
             ))}
           </div>
         )}
+        </div>
       </div>
-      <article className="detail-copy reveal">
+      </div>
+      <article className="col-lg-6">
         <span className="eyebrow">{type?.name}</span>
-        <h1>{product.name}</h1>
-        <strong className="price">₹{product.price.toLocaleString("en-IN")}</strong>
+        <h1 className="display-5 fw-bold mt-2">{product.name}</h1>
+        <strong className="d-block fs-2 text-primary mb-2">₹{product.price.toLocaleString("en-IN")}</strong>
         <AvailabilityBadge status={product.availability} />
-        <p>{product.description}</p>
-        <Button className="buy-button" onClick={() => window.open(whatsappUrl, "_blank", "noopener,noreferrer")}>
+        <p className="lead text-muted mt-4">{product.description}</p>
+        <Button className="btn-lg my-3" onClick={() => window.open(whatsappUrl, "_blank", "noopener,noreferrer")}>
           <MessageCircle size={18} />
           Buy on WhatsApp
         </Button>
-        <dl>
+        <dl className="list-group mt-4">
           {product.specifications.map((spec) => (
-            <div key={spec.label}>
-              <dt>{spec.label}</dt>
-              <dd>{spec.value}</dd>
+            <div className="list-group-item d-flex justify-content-between gap-3" key={spec.label}>
+              <dt className="text-muted">{spec.label}</dt>
+              <dd className="mb-0 fw-bold">{spec.value}</dd>
             </div>
           ))}
         </dl>
       </article>
+      </div>
     </section>
   );
 }

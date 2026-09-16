@@ -49,7 +49,7 @@ export function AdminDashboard({
   onLogout,
 }) {
   return (
-    <section className="section page">
+    <section className="container-xl py-5 min-vh-100">
       <AdminTopbar title="Admin Dashboard" onHome={onHome} onLogout={onLogout} />
       <div className="stats-grid">
         <div>
@@ -86,11 +86,11 @@ export function ManageProductsPage({ products, types, api, onBack, onAdd, onEdit
   }
 
   return (
-    <section className="section page">
+    <section className="container-xl py-5 min-vh-100">
       <BackButton onClick={onBack}>Back to dashboard</BackButton>
-      <div className="section-heading">
-        <span>Admin</span>
-        <h1>Manage products</h1>
+      <div className="mb-4">
+        <span className="eyebrow">Admin</span>
+        <h1 className="display-6 fw-bold">Manage products</h1>
       </div>
       <Button className="admin-add-button" onClick={onAdd}>
         <Plus size={17} />
@@ -123,11 +123,11 @@ export function ManageTypesPage({ types, api, onBack, onAdd, onEdit, onRefresh }
   }
 
   return (
-    <section className="section page">
+    <section className="container-xl py-5 min-vh-100">
       <BackButton onClick={onBack}>Back to dashboard</BackButton>
-      <div className="section-heading">
-        <span>Admin</span>
-        <h1>Manage product types</h1>
+      <div className="mb-4">
+        <span className="eyebrow">Admin</span>
+        <h1 className="display-6 fw-bold">Manage product types</h1>
       </div>
       <Button className="admin-add-button" onClick={onAdd}>
         <Plus size={17} />
@@ -181,7 +181,7 @@ export function TypeFormPage({ type, api, onBack, onSaved }) {
   }
 
   return (
-    <section className="section page">
+    <section className="container-xl py-5 min-vh-100">
       <BackButton onClick={onBack}>Back to product types</BackButton>
       <form className="admin-panel wide" onSubmit={submit}>
         <h1>{type ? "Edit product type" : "Add product type"}</h1>
@@ -238,7 +238,7 @@ export function ProductFormPage({ product, types, api, onBack, onSaved }) {
   }
 
   return (
-    <section className="section page">
+    <section className="container-xl py-5 min-vh-100">
       <BackButton onClick={onBack}>Back to products</BackButton>
       <form className="admin-panel wide" onSubmit={submit}>
         <h1>{product ? "Edit product" : "Add product"}</h1>

@@ -12,18 +12,20 @@ export function CollectionPage({ type, products, onBack, onOpenProduct }) {
   }, [products, search]);
 
   return (
-    <section className="section page">
+    <section className="container-xl py-5 min-vh-100">
       <BackButton onClick={onBack}>Back to collections</BackButton>
-      <div className="section-heading">
-        <span>{type?.name || "Collection"}</span>
-        <h1>{type?.description}</h1>
+      <div className="mb-4">
+        <span className="eyebrow">{type?.name || "Collection"}</span>
+        <h1 className="display-6 fw-bold">{type?.description}</h1>
       </div>
       <SearchInput value={search} onChange={setSearch} />
 
       {filteredProducts.length ? (
-        <div className="product-grid">
+        <div className="row g-4">
           {filteredProducts.map((product, index) => (
-            <ProductCard key={product.id} product={product} index={index} onClick={() => onOpenProduct(product.id)} />
+            <div className="col-md-6 col-lg-4 col-xl-3" key={product.id}>
+              <ProductCard product={product} index={index} onClick={() => onOpenProduct(product.id)} />
+            </div>
           ))}
         </div>
       ) : (
