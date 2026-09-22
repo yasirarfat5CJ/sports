@@ -3,7 +3,7 @@ export const batProducts = [
     id: "bat-tennis",
     productTypeId: "type-tennis-bats",
     name: "Tennis Cricket Bat",
-    price: 899,
+    price: 2199,
     images: ["/images/bats/bats.jpg", "/images/bats/tennis-bats.jpeg"],
     description:
       "Lightweight tennis cricket bat with a quick pickup for practice, street cricket, and friendly matches.",
